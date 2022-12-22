@@ -10,8 +10,10 @@ Small custom library for npm projects.
 Logs an input `prompt (string)` to path `file (string)`
 ### ArrayContains: function (arr, value, row)
 Checks if 2D array `arr (array)` contains a value `value (*)` in row `row (int)`
-### RelativeTimeReply: function (totalSeconds) or (days, hours, minutes, seconds)
+### RelativeTimeReplySeconds: function (totalSeconds)
 Returns a readable description of a selected time and date `totalSeconds (long)`
+### RelativeTimeReply: function (days, hours, minutes, seconds)
+Returns a readable description of a selected time and date `(days int, hours int, minutes int, seconds int)`
 
 
 # Usage

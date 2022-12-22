@@ -30,7 +30,7 @@ module.exports = {
 	},
 
 	// Seconds to other
-	RelativeTimeReply: function (totalSeconds) {
+	RelativeTimeReplySeconds: function (totalSeconds) {
 		let days = Math.floor(totalSeconds / 86400);
 		totalSeconds %= 86400;
 		let hours = Math.floor(totalSeconds / 3600);
