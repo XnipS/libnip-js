@@ -1,22 +1,22 @@
 {
-  "name": "libnip-js",
-  "version": "1.0.0",
-  "description": "Small independant library mainly for my own use.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/XnipS/libnip-js.git"
-  },
-  "author": "XnipS",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/XnipS/libnip-js/issues"
-  },
-  "homepage": "https://github.com/XnipS/libnip-js#readme",
-  "dependencies": {
-    "fs": "^0.0.1-security"
-  }
+	"name": "libnip-js",
+	"version": "1.0.0",
+	"description": "Small independant library mainly for my own use.",
+	"main": "index.js",
+	"scripts": {
+		"test": "node index.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/XnipS/libnip-js.git"
+	},
+	"author": "XnipS",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/XnipS/libnip-js/issues"
+	},
+	"homepage": "https://github.com/XnipS/libnip-js#readme",
+	"dependencies": {
+		"fs": "^0.0.1-security"
+	}
 }
