@@ -1,6 +1,6 @@
 {
 	"name": "libnip-js",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Small independant library mainly for my own use.",
 	"main": "index.js",
 	"scripts": {
