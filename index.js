@@ -31,19 +31,7 @@ module.exports = {
 
 	// Reply using relative time
 	RelativeTimeReply: function (days, hours, minutes, seconds) {
-		let uptime = "Unknown error occurred...";
-		if (days > 0) {
-			uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-		}
-		else if (hours > 0) {
-			uptime = `${hours} hours, ${minutes} minutes and ${seconds} seconds`;
-		}
-		else if (minutes > 0) {
-			uptime = `${minutes} minutes and ${seconds} seconds`;
-		} else {
-			uptime = `${seconds} seconds`;
-		}
-		return uptime;
+		return TimeReply(days, hours, minutes, seconds);
 	},
 
 	// Seconds to other
@@ -54,6 +42,23 @@ module.exports = {
 		totalSeconds %= 3600;
 		let minutes = Math.floor(totalSeconds / 60);
 		let seconds = Math.floor(totalSeconds % 60);
-		return RelativeTimeReply(days, hours, minutes, seconds);
+		return TimeReply(days, hours, minutes, seconds);
 	}
+}
+
+// Time Conversion
+function TimeReply(days, hours, minutes, seconds) {
+	let uptime = "Unknown error occurred...";
+	if (days > 0) {
+		uptime = `${days} days, ${hours} hours, ${minutes} minutes and ${seconds} seconds`;
+	}
+	else if (hours > 0) {
+		uptime = `${hours} hours, ${minutes} minutes and ${seconds} seconds`;
+	}
+	else if (minutes > 0) {
+		uptime = `${minutes} minutes and ${seconds} seconds`;
+	} else {
+		uptime = `${seconds} seconds`;
+	}
+	return uptime;
 }
