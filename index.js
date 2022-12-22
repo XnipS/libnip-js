@@ -29,17 +29,6 @@ module.exports = {
 		return output;
 	},
 
-	// Seconds to other
-	RelativeTimeReplySeconds: function (totalSeconds) {
-		let days = Math.floor(totalSeconds / 86400);
-		totalSeconds %= 86400;
-		let hours = Math.floor(totalSeconds / 3600);
-		totalSeconds %= 3600;
-		let minutes = Math.floor(totalSeconds / 60);
-		let seconds = Math.floor(totalSeconds % 60);
-		return RelativeTimeReply(days, hours, minutes, seconds);
-	},
-
 	// Reply using relative time
 	RelativeTimeReply: function (days, hours, minutes, seconds) {
 		let uptime = "Unknown error occurred...";
@@ -55,5 +44,16 @@ module.exports = {
 			uptime = `${seconds} seconds`;
 		}
 		return uptime;
+	},
+
+	// Seconds to other
+	RelativeTimeReplySeconds: function (totalSeconds) {
+		let days = Math.floor(totalSeconds / 86400);
+		totalSeconds %= 86400;
+		let hours = Math.floor(totalSeconds / 3600);
+		totalSeconds %= 3600;
+		let minutes = Math.floor(totalSeconds / 60);
+		let seconds = Math.floor(totalSeconds % 60);
+		return RelativeTimeReply(days, hours, minutes, seconds);
 	}
 }
